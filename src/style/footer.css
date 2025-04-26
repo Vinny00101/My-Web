@@ -1,0 +1,16 @@
+footer> .footer-infor{
+    width: 100%;
+    height: 65px;
+}
+
+footer> .footer-copyright-infor-link{
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #CCCCCC;
+    font-weight: 550;
+    color: var(--cor-princiapal);
+    width: 100%;
+    height: 35px;
+}
