@@ -1,0 +1,211 @@
+.content-infor-user{
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-text{
+    width: 50%;
+    #iten{
+        padding-bottom: 5%;
+    }
+}
+
+.infor-prof{
+    text-decoration: underline 2px;
+}
+
+.social-icons{
+    flex: 1 1;
+    display: flex;
+    padding: 2% 0;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-icons> a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    color: var(--cor-principal);
+    text-decoration: none;
+    border: 0.2rem solid var(--cor-principal);
+    border-radius: 100%;
+    font-size: 1.7rem;
+    margin: 0.1rem 1rem 3rem;
+    transition: 0.3s ease;
+}
+.social-icons> a:hover{
+    background-color: var(--cor-principal);
+    color: white;
+    scale: 1.2;
+}
+
+.container-img{
+ padding-bottom: 2%;
+}
+.container-img> img{
+    border: 4px solid white;
+    border-radius: 15px;
+    box-shadow: -20px 25px 1px 1px var(--cor-principal-dark);
+    transform: rotate(4deg);
+}
+
+.sobre-skils{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(170, 123, 170, 0.2);
+}
+
+.skils-wrapper{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 4px solid var(--cor-principal-dark);
+    height: 400px;
+    width: 400px;
+}
+
+.title{
+    font-size: clamp(1.0em, 1rem + 2vw , 1.7rem);
+}
+.title-skils{
+    padding: 4%;
+}
+
+
+.container-infor-skils{
+    margin: 3% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.infor-text-sobre{
+    padding: 5%;
+    font-size: clamp(1.0em, 1rem + 2vw , 1.2rem);
+    width: 50%;
+    #iten-sobre{
+        font-weight: 400;
+        padding-bottom: 5%;
+    }
+}
+.container-skils{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex-grow: 1;
+    padding: 4%;
+    width: 100%;
+}
+
+.infor-bar-text{
+    display: flex;
+    justify-content: space-between;
+}
+.bar-container:hover{
+    scale: 1.05;
+    transition: .8s;
+}
+.bar-content{
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    margin-top: 2px ;
+    background-color: var(--cor-principal-dark);
+}
+
+.bar-progress-1{
+    border-radius: 20px;
+    background: linear-gradient(to left, #c316d3dd, #690772dd);
+    height: 100%;
+    width: 90%;
+}
+
+.bar-progress-2{
+    border-radius: 20px;
+    background: linear-gradient(to left, #c316d3dd, #690772dd);
+    height: 100%;
+    width: 87%;
+}
+
+.bar-progress-3{
+    border-radius: 20px;
+    background: linear-gradient(to left, #c316d3dd, #690772dd);
+    height: 100%;
+    width: 70%;
+}
+
+.bar-progress-4{
+    border-radius: 20px;
+    background: linear-gradient(to left, #c316d3dd, #690772dd);
+    height: 100%;
+    width: 60%;
+}
+
+.bar-progress-5{
+    border-radius: 20px;
+    background: linear-gradient(to left, #c316d3dd, #690772dd);
+    height: 100%;
+    width: 55%;
+}
+
+@media (max-width: 1008px) {
+    .content-infor-user{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .content-text{
+        width: 100%;
+        text-align: center;
+    }
+    .infor-text-sobre{
+        #iten-sobre{
+            font-weight: 200;
+            padding-bottom: 5%;
+        }
+    }
+    .social-icons{
+        justify-content: center;
+    }
+    .social-icons> a{
+        border-radius: 50%;
+        border: 3px solid var(--cor-principal-dark);
+    }
+    .container-infor-skils{
+        flex-direction: column;
+    }
+    .infor-text-sobre{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 564px){
+    .container-img{
+        padding-top: 5%;
+    }
+    .skils-wrapper{
+        scale: 0.7;
+    }
+    .infor-text-sobre{
+        width: 100%;
+        font-size: clamp(1.0em, 1rem + 2vw , 1.1rem);
+    }
+    .container-img> img{
+        transform: rotate(0);
+    }
+    .sobre-skils{
+        background: transparent;
+    }
+    .skils-wrapper{
+        background-color: rgba(170, 123, 170, 0.2);
+    }
+}
