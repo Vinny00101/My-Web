@@ -81,4 +81,12 @@ body.dark{
     .wrapper{
         box-shadow: none;
     }
+    .social-icons> a{
+        color: var(--cor-principal-dark);
+        border: 0.2rem solid var(--cor-principal-dark);
+    }
+    .social-icons> a:hover{
+        background-color: var(--cor-principal-dark);
+        color: white;
+    }
 }

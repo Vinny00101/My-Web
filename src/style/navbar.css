@@ -41,11 +41,11 @@
   display: none;
 }
 
-#button-open-menu-close{
+.buttonOpenMenu{
   background-color: transparent;
   display: none;
   border: none;
-  i {
+  & i {
       font-size: 16px;
       color: var(--cor-principal);
   }
@@ -80,4 +80,11 @@
 .container-nav-mobile{
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 766px){
+  .buttonOpenMenu{
+    margin-left: 15%;
+    display: block;
+  }
 }

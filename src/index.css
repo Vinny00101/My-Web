@@ -89,11 +89,7 @@ span{
       flex-direction: column;
   }
   .container-img > img{
-      width: 300px;
-  }
-  #button-open-menu-close{
-      margin-left: 6%;
-      display: block;
+      width: 14rem;
   }
   #trilho-mobile{
       display: flex;
