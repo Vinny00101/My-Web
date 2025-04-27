@@ -50,7 +50,7 @@
       color: var(--cor-principal);
   }
 }
-#ul-links-mobile{
+.Bar-mobile{
   padding: 5%;
   top: 48px;
   position: absolute;
@@ -61,6 +61,11 @@
   align-items: flex-start;
   flex-direction: column;
 }
+
+.Bar-mobile.isOpen{
+  display: flex;
+}
+
 #ul-links-mobile> li{
   list-style: none;
 }
