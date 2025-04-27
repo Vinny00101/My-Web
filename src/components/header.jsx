@@ -8,6 +8,7 @@ export default function headerComponent() {
     const trilho = useRef(null)
     const trilhoMobile = useRef(null)
     const functrilho = useRef()
+    const ulLink = useRef(null)
 
     const funcTrilho_desktop = () => {
         return functrilho.current(trilho.current)
@@ -15,6 +16,13 @@ export default function headerComponent() {
 
     const funcTrilho_Mobile = () => {
         return functrilho.current(trilhoMobile.current)
+    }
+
+    const buttonClickOpenMenu = () => {
+        if(ulLink.current.style.display === 'none'){
+            return console.log('ta em none')
+        }
+        return console.log('nao ta em none')
     }
 
     useEffect(() => {
@@ -73,10 +81,10 @@ export default function headerComponent() {
                             <div className="indicador"></div>
                         </div>
                     </div>
-                    <button id="button-open-menu-close" type="button" title="menu"><i className="fas fa-bars"></i></button>
+                    <button className="buttonOpenMenu" type="button"><i className="fas fa-bars"></i></button>
                 </div>
             </nav>
-            <ul id="ul-links-mobile">
+            <ul ref={ulLink} id="ul-links-mobile">
                 <li className="link"><a href="/">INICIO</a></li>
                 <li className="link"><a href="#">SOBRE</a></li>
                 <li className="link"><a href="#">PROJETO</a></li>
