@@ -3,12 +3,12 @@ import "../style/navbar.css"
 import "../style/theme.css"
 
 export default function headerComponent() {
-    const [Theme, setTheme] = useState('ligth')
     const [themeLocal, setThemeLocal] = useState(null)
     const trilho = useRef(null)
     const trilhoMobile = useRef(null)
-    const functrilho = useRef()
     const ulLink = useRef(null)
+    const funcMenuMobileIsOpen = useRef()
+    const functrilho = useRef()
 
     const funcTrilho_desktop = () => {
         return functrilho.current(trilho.current)
@@ -19,17 +19,24 @@ export default function headerComponent() {
     }
 
     const buttonClickOpenMenu = () => {
-        if(ulLink.current.style.display === 'none'){
-            return console.log('ta em none')
-        }
-        return console.log('nao ta em none')
+        return funcMenuMobileIsOpen.current(ulLink.current)
     }
 
+    // useEffect para abrir menu mobile
+    useEffect(() => {
+        funcMenuMobileIsOpen.current = (ref) => {
+            ref.classList.toggle('isOpen')
+        }
+    }, [])
+
+    // useEffect para ouvir ;ocalStorage com key == 'theme' 
     useEffect(() => {
         const theme = localStorage.getItem('theme')
         setThemeLocal(theme)
     })
 
+    // useEffect para ouvir themeLocal e verificar se teve mudanca, e fazer alteracoes dinamicas.
+    // e uma 'func' para receber 'click' de 'button'
     useEffect(() =>{
 
         const body = document.body
@@ -81,10 +88,10 @@ export default function headerComponent() {
                             <div className="indicador"></div>
                         </div>
                     </div>
-                    <button className="buttonOpenMenu" type="button"><i className="fas fa-bars"></i></button>
+                    <button onClick={buttonClickOpenMenu} className="buttonOpenMenu" type="button"><i className="fas fa-bars"></i></button>
                 </div>
             </nav>
-            <ul ref={ulLink} id="ul-links-mobile">
+            <ul className="Bar-mobile" id="ul-links-mobile" ref={ulLink}>
                 <li className="link"><a href="/">INICIO</a></li>
                 <li className="link"><a href="#">SOBRE</a></li>
                 <li className="link"><a href="#">PROJETO</a></li>
