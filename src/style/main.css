@@ -74,6 +74,7 @@
 }
 
 .title{
+    margin: 4% 0;
     font-size: clamp(1.0em, 1rem + 2vw , 1.7rem);
 }
 .title-skils{
