@@ -79,7 +79,28 @@ body.dark{
         color: var(--cor-principal-dark);
     }
     .wrapper{
+        border: 2px solid var(--cor-principal-dark);
         box-shadow: none;
+    }
+    .imagem-content{
+        border: 1px solid var(--cor-principal-dark);
+    }
+    .button-link-project{
+        border: 2px solid var(--cor-principal-dark);
+    }
+    .button-link-project> a{
+        color: white;
+    }
+    
+    .button-link-project.privado{
+        background-color: var(--cor-principal-dark);
+        border: 4px solid var(--cor-principal-dark);
+    }
+    .button-link-project:hover{
+        background-color:  var(--cor-principal-dark);
+        a {
+            color: white;
+        }
     }
     .social-icons> a{
         color: var(--cor-principal-dark);
