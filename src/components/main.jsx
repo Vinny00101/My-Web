@@ -1,4 +1,5 @@
 import fotoSung from "../assets/fotoSung.png"
+import ProjectComponent from "./projects"
 import "../style/main.css"
 
 export default function MainComponent(){
@@ -96,38 +97,8 @@ export default function MainComponent(){
                         </div>
                     </div>
                 </div>
-                <div className="container-projects" id="container-projects">
-                    <div className="container-card">
-                        <div className="wrapper">
-                            <div className="card">
-                                <div className="imagem-content">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="wrapper">
-                            <div className="card">
-                                <div className="imagem-content">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="wrapper">
-                            <div className="card">
-                                <div className="imagem-content">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="wrapper">
-                            <div className="card">
-                                <div className="imagem-content">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h1 className="title">Projeto</h1>
+                <ProjectComponent/>
             </div>
         </>
     )
