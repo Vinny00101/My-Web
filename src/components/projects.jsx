@@ -44,12 +44,14 @@ export default function ProjectComponent() {
                             <div className="imagem-content">
                                 <img src={FotoProject1} alt="foto-Project1" />
                             </div>
-                            <div className="conatiner-infor-card">
+                            <div className="container-infor-card">
                                 <h1>API RESTful Estudantes</h1>
-                                <p>
-                                    API desenvolvida para gerenciamento de estudantes,
-                                    com operações de criação, leitura, atualização e remoção de registros.
-                                </p>
+                                <div className="container-infor">
+                                    <p>
+                                        API desenvolvida para gerenciamento de estudantes,
+                                        com operações de criação, leitura, atualização e remoção de registros.
+                                    </p>
+                                </div>
                                 <div className="gruop-tags">
                                     {TagsCSharp.map((Tag, index) => (
                                         <TagComponent key={index}>{Tag}</TagComponent>
@@ -57,12 +59,12 @@ export default function ProjectComponent() {
                                 </div>
                             </div>
                             <div className="button-link-project">
-                                    <a
-                                        href="https://github.com/Vinny00101/Crud-Estudantes-API-Csharp"
-                                        target="_blank"
-                                    >
-                                        Ver no GitHub <i className="fas fa-arrow-up"></i>
-                                    </a>
+                                <a
+                                    href="https://github.com/Vinny00101/Crud-Estudantes-API-Csharp"
+                                    target="_blank"
+                                >
+                                    Ver no GitHub <i className="fas fa-arrow-up"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -71,11 +73,13 @@ export default function ProjectComponent() {
                             <div className="imagem-content">
                                 <img src={FotoProject2} alt="" />
                             </div>
-                            <div className="conatiner-infor-card">
+                            <div className="container-infor-card">
                                 <h1>Sistema de Web Comics</h1>
+                                <div className="container-infor">
                                 <p>
                                     Este sistema foi desenvolvido para publicar e gerenciar quadrinhos digitais webcomics.
                                 </p>
+                                </div>
                                 <div className="gruop-tags">
                                     {TagsProjectPython.map((Tag, index) => (
                                         <TagComponent key={index}>{Tag}</TagComponent>
@@ -92,11 +96,13 @@ export default function ProjectComponent() {
                             <div className="imagem-content">
                                 <img src={defaultProject} alt="foto-Project3" />
                             </div>
-                            <div className="conatiner-infor-card">
+                            <div className="container-infor-card">
                                 <h1>Chat IA Desculpas</h1>
+                                <div className="container-infor">
                                 <p>
-                                projeto web divertido e interativo que utiliza inteligência artificial para gerar desculpas únicas, engraçadas e absolutamente geniais.
+                                    projeto web divertido e interativo que utiliza inteligência artificial para gerar desculpas únicas, engraçadas e absolutamente geniais.
                                 </p>
+                                </div>
                                 <div className="gruop-tags">
                                     {TagsChatIA.map((Tag, index) => (
                                         <TagComponent key={index}>{Tag}</TagComponent>
@@ -113,12 +119,14 @@ export default function ProjectComponent() {
                             <div className="imagem-content">
                                 <img src={defaultProject} alt="foto-Project4" />
                             </div>
-                            <div className="conatiner-infor-card">
+                            <div className="container-infor-card">
                                 <h1>Chat IA Desculpas</h1>
+                                <div className="container-infor">
                                 <p>
-                                Projeto de conclusão da disciplina de Algoritmos 1, desenvolvido em parceria com Mayan. 
-                                Trata-se de um sistema simples para a gestão de estoque de uma peixaria.
+                                    Projeto de conclusão da disciplina de Algoritmos 1, desenvolvido em parceria com Mayan.
+                                    Trata-se de um sistema simples para a gestão de estoque de uma peixaria.
                                 </p>
+                                </div>
                                 <div className="gruop-tags">
                                     {TagsProjetoC.map((Tag, index) => (
                                         <TagComponent key={index}>{Tag}</TagComponent>
