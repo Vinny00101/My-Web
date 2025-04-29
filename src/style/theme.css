@@ -62,6 +62,9 @@ body.dark{
         border-top: 2px solid var(--cor-principal-dark);
         color: var(--cor-principal-dark);
     }
+    footer> .footer-copyright-infor-link>a{
+        color: var(--cor-principal-dark);
+    }
     h1, li>a, span{
         color: var(--cor-principal-dark);
     }
@@ -108,6 +111,37 @@ body.dark{
     }
     .social-icons> a:hover{
         background-color: var(--cor-principal-dark);
+        color: white;
+    }
+    .title{
+        color: white;
+    }
+    .skils-wrapper{
+        border: 3px solid var(--cor-principal-dark);
+    }
+    .title-skils, .bar-container>.infor-bar-text>span{
+        color: white;
+    }
+
+    /* Form contact */
+    .form-contact> input{
+        color: white;
+        border: 2px solid var(--cor-principal-dark);
+        background-color: transparent;
+    }
+    .form-contact> textarea{
+        color: white;
+        border: 2px solid var(--cor-principal-dark);
+        background-color: transparent;
+    }
+    .form-contact> button{
+        background-color: var(--cor-principal-dark);
+        border: 2px solid var(--cor-principal-dark);
+    }
+    
+    .form-contact> button:hover{
+        background-color: transparent;
+        border: 2px solid var(--cor-principal-dark);
         color: white;
     }
 }
