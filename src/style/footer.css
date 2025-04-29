@@ -1,10 +1,15 @@
 footer> .footer-infor{
-    width: 100%;
-    height: 65px;
-}
-
-footer> .footer-copyright-infor-link{
     padding: 0 5%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: flex;
+}
+footer> .footer-copyright-infor-link{
+    padding: 2% 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,4 +18,91 @@ footer> .footer-copyright-infor-link{
     color: var(--cor-princiapal);
     width: 100%;
     height: 35px;
+}
+
+.container-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5% 0;
+}
+.container-content> .button-Contato{
+    border-radius: 15px;
+    background-color: var(--cor-principal); 
+    padding: 1% 2%;
+    border: 2px solid var(--cor-principal);
+}
+.container-content> .button-Contato> .Contato{
+    text-decoration: none;
+    color: white;
+}
+
+.conatiner-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.conatiner-form> .form-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-contact> input{
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 5%;
+    border: 2px solid var(--cor-principal);
+    padding: 2%;
+}
+
+.form-contact> textarea{
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 5%;
+    resize: none;
+    border: 2px solid var(--cor-principal);
+    padding: 2%;
+    height: 100px;
+}
+
+.form-contact> button{
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    margin-bottom: 5%;
+    background-color: var(--cor-principal);
+    border: 2px solid var(--cor-principal);
+    padding: 2%;
+}
+
+.form-contact> button:hover{
+    background-color: white;
+    border: 2px solid var(--cor-principal);
+    color: var(--cor-principal);
+}
+
+@media (max-width: 1200px){
+    .conatiner-form{
+        width: 70%;
+    }
+}
+
+@media (max-width: 1000px){
+    .conatiner-form{
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px){
+    .conatiner-form{
+        width: 90%;
+    }
 }
