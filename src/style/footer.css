@@ -1,4 +1,5 @@
 footer> .footer-infor{
+    background-color: white;
     padding: 0 5%;
     align-items: center;
     display: flex;
@@ -6,7 +7,6 @@ footer> .footer-infor{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: flex;
 }
 footer> .footer-copyright-infor-link{
     padding: 2% 5%;
@@ -21,6 +21,7 @@ footer> .footer-copyright-infor-link{
 }
 
 .container-content{
+    border: none;
     width: 100%;
     display: flex;
     align-items: center;

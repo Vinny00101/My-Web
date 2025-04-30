@@ -58,6 +58,9 @@ body.dark{
         border-top: 2px solid var(--cor-principal-dark);
         box-shadow: none;
     }
+    footer> .footer-infor{
+        background-color: transparent;
+    }
     footer> .footer-copyright-infor-link{
         border-top: 2px solid var(--cor-principal-dark);
         color: var(--cor-principal-dark);

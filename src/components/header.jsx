@@ -62,9 +62,9 @@ export default function headerComponent() {
                 <h1>using &lt;/ Vinny &gt;</h1>
                 <ul id="ul-links">
                     <li className="link"><a href="/">INICIO</a></li>
-                    <li className="link"><a href="#">SOBRE</a></li>
-                    <li className="link"><a href="#">PROJETO</a></li>
-                    <li className="link"><a href="#">CONTATO</a></li>
+                    <li className="link"><a href="#sobre">SOBRE</a></li>
+                    <li className="link"><a href="#project">PROJETO</a></li>
+                    <li className="link"><a href="#contact">CONTATO</a></li>
                 </ul>
                 <div onClick={funcTrilho_desktop} className="trilho" id="trilho" ref={trilho}>
                     <div className="icon">
@@ -93,9 +93,9 @@ export default function headerComponent() {
             </nav>
             <ul className="Bar-mobile" id="ul-links-mobile" ref={ulLink}>
                 <li className="link"><a href="/">INICIO</a></li>
-                <li className="link"><a href="#">SOBRE</a></li>
-                <li className="link"><a href="#">PROJETO</a></li>
-                <li className="link"><a href="#">CONTATO</a></li>
+                <li className="link"><a href="#sobre">SOBRE</a></li>
+                <li className="link"><a href="#project">PROJETO</a></li>
+                <li className="link"><a href="#contact">CONTATO</a></li>
             </ul>
         </header>
         </>

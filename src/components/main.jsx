@@ -97,7 +97,7 @@ export default function MainComponent(){
                         </div>
                     </div>
                 </div>
-                <h1 className="title">Projeto</h1>
+                <h1 className="title" id="project">Projeto</h1>
                 <ProjectComponent/>
             </div>
         </>
