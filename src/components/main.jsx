@@ -1,13 +1,35 @@
 import fotoSung from "../assets/fotoSung.png"
+import { useRef, useEffect } from "react"
 import ProjectComponent from "./projects"
 import "../style/main.css"
 
 export default function MainComponent(){
+    const sectionSkils = useRef(null)
+
+    useEffect(()=>{
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting){
+                    entry.target.classList.add('animate');
+                }
+            },
+            { threshold: 0.1 }
+        )
+
+        if (sectionSkils.current) {
+            observer.observe(sectionSkils.current);
+        }
+        return () => {
+            if (sectionSkils.current) {
+                observer.unobserve(sectionSkils.current);
+            }
+        }
+    }, [])
     return(
         <>
             <div className="content-infor-user">
                 <div className="content-text">
-                    <p id="iten">Olá, meu nome é <span>Vinicius Andrade</span></p>
+                    <p id="iten">Olá, meu nome é <span className="name">Vinicius Andrade</span></p>
                     <h1 className="infor-prof" id="iten">Desenvolvedor Back-End</h1>
                     <p id="iten">
                         Sou apaixonado por tecnologia e adoro enfrentar novos desafios. 
@@ -28,7 +50,7 @@ export default function MainComponent(){
                     <img src={fotoSung} alt="foto-anime" />
                 </div>
             </div>
-            <div className="sobre-skils" id="sobre">
+            <div ref={sectionSkils} className="sobre-skils" id="sobre">
                 <h1 className="title">Sobre mim</h1>
                 <div className="container-infor-skils" id="container-infor-skils">
                     <div className="infor-text-sobre">

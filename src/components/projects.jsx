@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from "react";
+import square from "../../public/square.svg"
 import FotoProject1 from "../assets/FotoProject1.png"
 import defaultProject from "../assets/defaultProject.png"
 import FotoProject2 from "../assets/FotoProject2.png"

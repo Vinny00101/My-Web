@@ -13,8 +13,17 @@
     }
 }
 
-.infor-prof{
-    text-decoration: underline 2px;
+.content-text> #iten>.name{
+    border-right: 4px solid var(--cor-principal);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes blinking{
+    50%{
+        border-color: transparent;
+    }
 }
 
 .social-icons{
@@ -56,6 +65,9 @@
 }
 
 .sobre-skils{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     padding: 5%;
     width: 100%;
     display: flex;
@@ -63,6 +75,10 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(170, 123, 170, 0.2);
+}
+.sobre-skils.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .skils-wrapper{
