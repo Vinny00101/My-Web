@@ -1,0 +1,11 @@
+<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo roxo arredondado -->
+  <rect width="30" height="30" rx="5" fill="#8a2be2"/>
+  
+  <!-- Letra V invertida (Λ) -->
+  <path d="M8 8 L15 22 L22 8" 
+        stroke="white" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        fill="none"/>
+</svg>
